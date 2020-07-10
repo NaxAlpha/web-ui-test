@@ -9,6 +9,6 @@ jobs:
       - name: Percy Test
         uses: percy/exec-action@v0.1.1
         with:
-          command: "percy snapshot ."
+          command: "percy -p=5339 snapshot ."
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
